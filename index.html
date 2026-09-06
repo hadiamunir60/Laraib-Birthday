@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Secret ❤️</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+
+<body>
+    <audio id="birthdayMusic" loop preload="auto"></audio>
+
+
+
+    <!-- =====================================
+         SCREEN 1
+    ====================================== -->
+
+    <main class="screen login-screen">
+
+
+        <!-- MUSIC -->
+
+        <button
+            class="music-control"
+            id="musicToggle"
+            aria-label="Music"
+        >
+            🎵
+        </button>
+
+
+
+        <!-- =====================================
+             MAIN CONTAINER
+        ====================================== -->
+
+        <section class="login-container">
+
+
+            <!-- =====================================
+                 MYSTERY DOOR
+            ====================================== -->
+
+            <div class="door-container">
+
+                <div class="door-glow"></div>
+
+                <div class="door-frame">
+
+                    <div class="mystery-door">
+
+                        <div class="door-panel">
+
+                            <div class="peephole"></div>
+
+                            <div class="door-handle"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 INTRO MESSAGE
+            ====================================== -->
+
+            <div class="intro-message">
+
+                <h1>
+                    Psst… before you go any further… 👀
+                </h1>
+
+                <p>
+                    There’s a little secret behind this door,
+                    and somehow… you found your way here. 🤭
+                </p>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 LOGIN AREA
+            ====================================== -->
+
+            <div class="login-card">
+
+
+                <!-- USERNAME -->
+
+                <div class="compact-field">
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Enter username"
+                        autocomplete="off"
+                        spellcheck="false"
+                    >
+
+                </div>
+
+
+
+                <!-- PASSWORD -->
+
+                <div class="compact-field">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter password"
+                            autocomplete="off"
+                        >
+
+
+                        <button
+                            type="button"
+                            class="password-eye"
+                            id="passwordEye"
+                            aria-label="Show password"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- UNLOCK -->
+
+                <button
+                    type="button"
+                    class="main-button login-button"
+                    id="loginButton"
+                >
+                    Unlock the door ❤️
+                </button>
+
+
+
+                <!-- ERROR -->
+
+                <p
+                    class="login-error"
+                    id="loginError"
+                ></p>
+
+
+
+                <!-- SUCCESS -->
+
+                <div
+                    class="success-message"
+                    id="successMessage"
+                >
+                    Well… you knew the secret after all. 👀❤️
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         SCREEN 2 — YOU MADE IT
+    ====================================== -->
+
+    <section class="screen screen-2" id="screen2">
+
+        <div class="screen2-glow"></div>
+
+        <div class="screen2-content">
+
+            <div class="small-heart">♥</div>
+
+            <p class="screen2-small">
+                LOOK WHO FOUND THE SECRET... 🤭❤️
+            </p>
+
+            <h1>
+                Well, look who finally made it through...
+            </h1>
+
+            <p class="screen2-message">
+                I was starting to wonder if you would ever find the secret. 🤭❤️
+            </p>
+
+            <p class="screen2-message second-message">
+                But since you're here now... 
+                I guess it's time to show you what I've been hiding. 👀💌
+            </p>
+
+            <button
+                class="screen2-next"
+                id="screen2Next"
+            >
+                Reveal the surprise 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SCREEN 3 — CANDLE REVEAL
+    ====================================== -->
+
+    <section class="screen screen-3" id="screen3">
+
+        <div class="candle-glow"></div>
+
+        <div class="candle-scene">
+
+            <!-- CANDLE 1 -->
+
+            <div class="candle-wrap large-candle">
+
+                <div class="flame large-flame"></div>
+
+                <div class="candle-body"></div>
+
+            </div>
+
+
+            <!-- CANDLE 2 -->
+
+            <div class="candle-wrap small-candle">
+
+                <div class="flame small-flame"></div>
+
+                <div class="candle-body"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MESSAGE -->
+
+        <div
+            class="candle-message"
+            id="candleMessage"
+        >
+
+            <p>
+                Okay… now that the candles are behaving… ❤️
+            </p>
+
+            <h2>
+                A birthday wish could never be enough for someone as special as you…🤭
+                So, I have a little more waiting for you. ❤️🤭
+            </h2>
+
+            <button
+                class="screen3-next"
+                id="screen3Next"
+            >
+                Show me ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SCREEN 4 — 10 LITTLE REASONS
+    ====================================== -->
+
+    <section class="screen screen-4" id="screen4">
+
+        <div class="reasons-glow"></div>
+
+        <div class="reasons-content">
+
+            <p class="reasons-small">
+                A LITTLE SOMETHING... ❤️
+            </p>
+
+            <h1>
+                10 little reasons...
+            </h1>
+
+            <p class="reasons-intro">
+                You’ll have to discover them one by one. 🤭
+            </p>
+
+
+            <div class="reasons-list">
+
+
+                <!-- REASON 01 -->
+
+                <button
+                    class="reason-card"
+                    data-reason="1"
+                >
+
+                    <span class="reason-number">
+                        01
+                    </span>
+
+                    <span class="reason-hint">
+                        Wanna know? 👀
+                    </span>
+
+                </button>
+
+
+
+                <!-- REASON 02 -->
+
+                <button
+                    class="reason-card"
+                    data-reason="2"
+                >
+
+                    <span class="reason-number">
+                        02
+                    </span>
+
+                    <span class="reason-hint">
+                        Maybe this one is obvious...
+                    </span>
+
+                </button>
+
+
+
+                <!-- REASON 03 -->
+
+                <button
+                    class="reason-card"
+                    data-reason="3"
+                >
+
+                    <span class="reason-number">
+                        03
+                    </span>
+
+                    <span class="reason-hint">
+                        Take a guess 🤭
+                    </span>
+
+                </button>
+
+
+
+                <!-- REASON 04 -->
+
+                <button
+                    class="reason-card"
+                    data-reason="4"
+                >
+
+                    <span class="reason-number">
+                        04
+                    </span>
+
+                    <span class="reason-hint">
+                        This one's kinda cute ❤️
+                    </span>
+
+                </button>
+
+
+
+                <!-- REASON 05 -->
+
+                <button
+                    class="reason-card"
+                    data-reason="5"
+                >
+
+                    <span class="reason-number">
+                        05
+                    </span>
+
+                    <span class="reason-hint">
+                        Don't skip this one...
+                    </span>
+
+                </button>
+
+
+
+                <!-- REASON 06 -->
+
+                <button
+                    class="reason-card"
+                    data-reason="6"
+                >
+
+                    <span class="reason-number">
+                        06
+                    </span>
+
+                    <span class="reason-hint">
+                        A little secret 🤫
+                    </span>
+
+                </button>
+
+
+
+                <!-- REASON 07 -->
+
+                <button
+                    class="reason-card"
+                    data-reason="7"
+                >
+
+                    <span class="reason-number">
+                        07
+                    </span>
+
+                    <span class="reason-hint">
+                        Think you know? 👀
+                    </span>
+
+                </button>
+
+
+
+                <!-- REASON 08 -->
+
+                <button
+                    class="reason-card"
+                    data-reason="8"
+                >
+
+                    <span class="reason-number">
+                        08
+                    </span>
+
+                    <span class="reason-hint">
+                        This might surprise you
+                    </span>
+
+                </button>
+
+
+
+                <!-- REASON 09 -->
+
+                <button
+                    class="reason-card"
+                    data-reason="9"
+                >
+
+                    <span class="reason-number">
+                        09
+                    </span>
+
+                    <span class="reason-hint">
+                        Almost at the end...
+                    </span>
+
+                </button>
+
+
+
+                <!-- REASON 10 -->
+
+                <button
+                    class="reason-card"
+                    data-reason="10"
+                >
+
+                    <span class="reason-number">
+                        10
+                    </span>
+
+                    <span class="reason-hint">
+                        Save the best for last ❤️
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- REASON POPUP -->
+
+            <div
+                class="reason-reveal"
+                id="reasonReveal"
+            >
+
+                <button
+                    class="reason-close"
+                    id="reasonClose"
+                >
+                    ×
+                </button>
+
+                <span
+                    class="reveal-number"
+                    id="revealNumber"
+                ></span>
+
+                <p
+                    class="reveal-text"
+                    id="revealText"
+                ></p>
+
+            </div>
+
+
+
+            <button
+                class="screen4-next"
+                id="screen4Next"
+            >
+                There's more ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SCREEN 5 — SECRET LETTER
+    ====================================== -->
+
+    <section class="screen screen-5" id="screen5">
+
+        <div class="letter-glow"></div>
+
+        <div class="letter-content">
+
+            <p class="letter-small">
+                ONE LITTLE SECRET... 🤫
+            </p>
+
+            <h1>
+                There are a few things<br>
+                you should know...
+            </h1>
+
+            <p class="letter-intro">
+                But I'm not giving them away that easily. 👀
+            </p>
+
+
+
+            <!-- CLOSED LETTER -->
+
+            <div
+                class="letter-wrapper"
+                id="letterWrapper"
+            >
+
+                <div class="letter-envelope">
+
+                    <div class="envelope-back"></div>
+
+                    <div
+                        class="letter-paper"
+                        id="letterPaper"
+                    >
+
+                        <span class="letter-title">
+                            A little note for you ❤️
+                        </span>
+
+                        <div class="letter-lines">
+
+                            <p>
+                                No matter how busy life gets or how much things change, I hope you never forget how special you are to me.
+                            </p>
+
+                            <p>
+                                You hold a very special place in my heart, and having you in my life means more to me than I can ever put into words. ❤️🥹
+                            </p>
+
+                            <p>
+                                Maybe that's why this little surprise
+                                had to exist. 🤭
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="envelope-front"></div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- OPEN BUTTON -->
+
+            <button
+                class="letter-open-btn"
+                id="letterOpenBtn"
+            >
+                Unfold this 👀
+            </button>
+
+
+
+            <!-- FINAL MESSAGE -->
+
+            <div
+                class="letter-final"
+                id="letterFinal"
+            >
+
+                <p>
+                    Okay... that's enough secrets for now. 🤭❤️
+                </p>
+
+                <button
+                    class="screen5-next"
+                    id="screen5Next"
+                >
+                    Keep going ❤️
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SCREEN 6 — THE GIFT
+    ====================================== -->
+
+    <section
+        class="screen screen-6"
+        id="screen6"
+    >
+
+        <div class="gift-glow"></div>
+
+        <div class="gift-content">
+
+            <p class="gift-small">
+                ONE MORE THING... 🎁
+            </p>
+
+            <h1>
+                Not quite... I saved one more little surprise just for you. ❤️
+            </h1>
+
+            <p class="gift-intro">
+                Not quite... there's still one little surprise
+                waiting for you. 👀
+            </p>
+
+
+
+            <!-- GIFT BOX -->
+
+            <div
+                class="gift-box"
+                id="giftBox"
+            >
+
+                <div class="gift-lid">
+
+                    <div class="gift-ribbon-horizontal"></div>
+
+                </div>
+
+                <div class="gift-body">
+
+                    <div class="gift-ribbon-vertical"></div>
+
+                </div>
+
+                <div class="gift-glow-inside">
+                    ✨
+                </div>
+
+            </div>
+
+
+
+            <!-- OPEN GIFT -->
+
+            <button
+                class="gift-open-btn"
+                id="giftOpenBtn"
+            >
+                One more surprise 🎁
+            </button>
+
+
+
+            <!-- GIFT MESSAGE -->
+
+            <div
+                class="gift-message"
+                id="giftMessage"
+            >
+
+                <p class="gift-message-small">
+                    JUST FOR YOU ❤️
+                </p>
+
+                <h2>
+                    Some surprises are worth waiting for... ✨
+                </h2>
+
+                <p>
+                    And somehow, this one ended up being
+                    made just for you. 🤭
+                </p>
+
+                <button
+                    class="screen6-next"
+                    id="screen6Next"
+                >
+                    There's still more ❤️
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SCREEN 7 — LAST LITTLE THING
+    ====================================== -->
+
+    <section
+        class="screen screen-7"
+        id="screen7"
+    >
+
+        <div class="screen7-glow"></div>
+
+        <div class="screen7-content">
+
+
+            <div class="screen7-sparkle">
+                ✦
+            </div>
+
+
+            <p class="screen7-label">
+                A LITTLE SURPRISE
+            </p>
+
+
+            <h1>
+                One last little thing…
+            </h1>
+
+
+            <p class="screen7-subtitle">
+                I saved this one for you. ❤️
+            </p>
+
+
+
+            <!-- SURPRISE CARD -->
+
+            <div
+                class="surprise-card"
+                id="surpriseCard"
+            >
+
+                <div class="surprise-icon">
+                    🎁
+                </div>
+
+                <h2>
+                    Something Special
+                </h2>
+
+                <p>
+                    Because some moments deserve
+                    a little extra thought. ✨
+                </p>
+
+            </div>
+
+
+
+            <!-- SCREEN 7 NEXT -->
+
+            <button
+                class="screen7-next"
+                id="screen7Next"
+            >
+                Open the final surprise ❤️
+            </button>
+
+
+
+            <!-- FINAL SURPRISE -->
+
+            <div
+                class="final-surprise"
+                id="finalSurprise"
+            >
+
+                <div class="final-heart">
+                    ❤️
+                </div>
+
+                <p class="final-small">
+                    JUST ONE LAST THING...
+                </p>
+
+                <h2>
+                    You made it all the way here. ✨
+                </h2>
+
+                <p>
+                    And honestly... that makes this little surprise
+                    even more special. ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!-- =====================================
+     SCREEN 8 — FINAL BIRTHDAY WISH
+====================================== -->
+<section class="screen screen-8" id="screen8">
+
+    <div class="screen8-glow"></div>
+
+    <div class="screen8-content">
+
+        <div class="screen8-sparkle">✨</div>
+
+        <p class="screen8-label">
+            FOR THE MOST SPECIAL PERSON... ❤️
+        </p>
+
+        <h1>
+            Happy Birthday! 🎂
+        </h1>
+
+        <p class="screen8-message">
+            Wishing you a very Happy Birthday! 🎉
+        </p>
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+        <h2>
+            A Little Wish For You 🌸
+        </h2>
+
+        <p class="screen8-final-text">
+
+    Happy Birthday, Love... ❤️
+
+    <br><br>
+
+    I don't even know where to begin because putting my feelings for you
+    into words feels almost impossible. 
+    You came into my life so quietly,
+    but somehow you changed everything so deeply. 
+    With you, love doesn't feel complicated or dramatic — it feels safe, warm, and real.
+    You are the person I can tell everything to, the one I look for in every room,
+    the one who makes ordinary days feel special just by being there.
+    Your voice calms me, your smile fixes my worst moods, and your presence
+    alone makes me feel protected in a way I can't explain.
+
+    <br><br>
+
+    I admire the way you think, the way you care, and the way you try —
+    not just for yourself, but for us. Loving you feels natural, like my
+    heart chose you long before I even realized it. On your birthday,
+    I just want you to know how deeply you are appreciated, how genuinely
+    you are loved, and how much I am thankful for you. I get to call you
+    mine. I pray that this year brings you success, happiness, and everything
+    you've been silently working for. And every time... I hope I get to
+    stand beside you through it all.
+
+    <br><br>
+
+    You're not just a simple man for me. You're my comfort, my peace, and
+    my favorite person in the world. I love you more than I can ever fully
+    explain. ❤️
+
+</p>
+        <div class="screen8-buttons">
+
+            <button class="screen8-replay" id="screen8Replay">
+                💌 Send Me a Message
+            </button>
+
+            <button class="screen8-finish" id="screen8Finish">
+                ✨ One Last Thing...
+            </button>
+
+        </div>
+
+        <!-- END MESSAGE -->
+        <div class="screen8-ended" id="screen8Ended">
+
+            <div class="end-sparkle">✨</div>
+
+            <h2>
+                That's The End ❤️
+            </h2>
+
+            <p>
+                Thank you for making it all the way here. 🥹
+            </p>
+
+            <h3>
+                Happy Birthday Once Again! 🎂✨
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     SCREEN 9 — FINAL GOODBYE
+====================================== -->
+<section id="screen9" class="screen screen-9" style="display:none;">
+
+    <div class="screen9-content">
+
+        <div class="screen9-heart">❤️</div>
+
+        <h2>
+            Thank you for being part of this little surprise. ❤️
+        </h2>
+
+    </div>
+
+</section>
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script
+        src="{{ url_for('static', filename='js/script.js') }}"
+    ></script>
+
+
+</body>
+
+</html>
